@@ -1,0 +1,19 @@
+
+
+class Fibonacci {
+    public static void main(String[] args) {
+    int n1=0;
+    int n2=1;
+    int n3;
+    int count=10; // Till where you want to print series
+    
+System.out.print("0 "+"1 ");    // Print 0 and 1
+    for(int i=2;i<=count;i++){ // Start printing from 3 element as 0 and 1 already printed above
+    n3=n1+n2;
+    n1=n2;      
+    n2=n3;
+    
+System.out.print(+n3+ " ");
+    }
+    }
+}
