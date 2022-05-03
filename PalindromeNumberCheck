@@ -1,0 +1,23 @@
+class PalindromeNumberCheck{
+    
+    public static void main(String args[]){
+        
+    
+    int n=77;
+    int temp=n; // We are storing n value in temp as later n will become zero
+    int reverse=0;
+    int rem;
+    
+    while(n!=0) {  // Reversing Numer
+        rem=n%10;
+        reverse=reverse*10+rem;
+        n=n/10;
+    }
+   
+   // Comparing Temp number which is actually our n number //If reversed number is equal to number temp then its palindrome number
+    if(temp==reverse)
+    System.out.print(temp+" is palindrome number");
+    else
+    System.out.print(temp+" is not palindrome number");
+    }
+}
