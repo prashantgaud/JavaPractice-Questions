@@ -1,0 +1,45 @@
+class ReverseNumber{
+ 
+//Using While Loop
+
+    public static void main(String args[]){
+        
+    
+    int n=12345;
+    int reverse=0;
+    int rem;
+    
+    while(n!=0){
+        
+        rem=n%10;
+        reverse=reverse*10+rem;
+        n=n/10;
+    }
+    System.out.print(reverse);
+    }
+}
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+//Using for loop
+
+
+class ReverseNumber{
+    
+    public static void main(String args[]){
+        
+    
+    int n=12345;
+    int reverse=0;
+    int rem;
+    
+    for(;n!=0;) { // This for loop while run until n becomes 0.
+        rem=n%10;
+        reverse=reverse*10+rem;
+        n=n/10;
+    }
+    System.out.print(reverse);
+    }
+}
