@@ -1,0 +1,21 @@
+class Prime{
+
+public static void main(String [] arg){
+    int n=11;
+    int count=0;
+    
+    for(int i=1;i<=n;i++){
+        
+        if(n%i==0){
+            count++;
+        }
+        if(count>2){ // This if condition to make program more efficent, if number divide more then two times then its not a prime number
+            break;  
+        }
+    }
+    if(count>2)
+        System.out.println(n+ " is not a prime number");
+        else 
+        System.out.println(n+ " is a prime number");
+}
+}
