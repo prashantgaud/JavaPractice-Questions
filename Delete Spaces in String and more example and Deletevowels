@@ -1,0 +1,36 @@
+
+public class DeleteSpaces {
+
+	public static void main(String[] args) {
+		
+		String s1=new String("My Name is Prashant Gaud");
+		String s2="";
+		// .replace(char,char) take two parmeters with String 
+		System.out.println(s1.replace(" ","")); // Replacing " " space with no space.  
+		System.out.println(s1.replace("a"," ")); // Replacing a space with  space.
+    System.out.println(s1.replace("a"," b")); // Replacing a space with b.
+		
+	}
+}
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+
+import java.util.Scanner;
+
+public class DeleteVowel
+{
+	public static void main(String[] args)
+	{
+		Scanner sc= new Scanner(System.in); 
+		System.out.print("Enter a string: ");
+		String s1= sc.nextLine();
+		String newS1="";
+		
+		newS1= s1.replaceAll("[aeiouAEIOU]", ""); // replace all 
+		System.out.println(newS1);  // Out is without aeiouAEIOU charactor
+	}
+}
