@@ -1,0 +1,33 @@
+
+public class CountSpaces {
+
+	public static void main(String[] args) {
+		
+		String s1=new String("Prashant");
+		int count;
+		count=s1.length();
+		System.out.println(count);
+	}
+}
+
+
+------------------------------------------------------------------------------------------------------
+import java.util.Scanner;
+
+public class CountSpaces{
+
+	public static void main(String[] args) {
+		String s1;
+		int count;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter String: ");   // Taking input from user
+		s1=sc.nextLine();     // nextline is use to take more then one word input
+		count=s1.length();  //length() is a method to count number of charactor of String and it also include spaces and its return type is int. So checking in int variable.
+		System.out.println("Count of String: "+count);
+		sc.close();  // Closing scanner class
+		
+	}
+}
+
+
+
